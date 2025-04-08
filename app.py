@@ -76,6 +76,8 @@ with st.form("review_form"):
     
     submitted = st.form_submit_button("Submit Answers")
 
+
+
 if submitted:
     # Validate that all questions have answers
     errors = []
@@ -120,3 +122,12 @@ if submitted:
             st.write("Question 2:", q2)
             st.write("Question 3:", q3)
             st.write("Comments:", comments)
+
+if os.path.exists(RESULTS_FILE):
+    with open(RESULTS_FILE, "rb") as f:
+        st.download_button(
+            label="Download Results CSV",
+            data=f,
+            file_name=RESULTS_FILE,
+            mime="text/csv"
+        )
