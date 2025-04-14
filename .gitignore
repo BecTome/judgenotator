@@ -1,2 +1,3 @@
 pairs/*
 !pairs/.gitkeep
+.venv

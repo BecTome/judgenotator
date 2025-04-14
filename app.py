@@ -197,11 +197,11 @@ if submitted:
             st.write("Question 5:", q5)
             st.write("Comments:", comments)
 
-if os.path.exists(RESULTS_FILE):
-    with open(RESULTS_FILE, "rb") as f:
-        st.download_button(
-            label="Download Results CSV",
-            data=f,
-            file_name=RESULTS_FILE,
-            mime="text/csv"
-        )
+# if os.path.exists(RESULTS_FILE):
+#     with open(RESULTS_FILE, "rb") as f:
+#         st.download_button(
+#             label="Download Results CSV",
+#             data=f,
+#             file_name=RESULTS_FILE,
+#             mime="text/csv"
+#         )
