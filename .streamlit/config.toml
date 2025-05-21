@@ -1,5 +1,5 @@
 [server]
-port = 8010  # or 8502 for second app
+port = 8501  # or 8502 for second app
 address = "127.0.0.1"
 headless = true
 enableCORS = false
